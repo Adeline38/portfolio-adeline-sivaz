@@ -2,7 +2,6 @@
 # Elle reste sur cet ordinateur et ne doit jamais être envoyée sur GitHub.
 /.vscode/sftp.json
 /.vscode/command-buttons.json
-/.secrets/
 
 
 # La version Word modifiable reste locale : le site publie uniquement le PDF fixe.
