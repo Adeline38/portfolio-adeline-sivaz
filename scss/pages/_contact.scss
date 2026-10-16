@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as *;
+
+.contact-layout { display: grid; grid-template-columns: 450px 752px; align-items: stretch; gap: 96px; width: 1312px; max-width: calc(100% - 128px); }
+.contact-details { padding-top: 5px; }
+.contact-details .section-title { margin-top: 18px; }
+.contact-details__lead { width: 430px; margin-top: 100px; color: $color-muted; font-size: 20px; line-height: 29px; }
+.contact-list { width: 424px; margin-top: 30px; border-top: 1px solid $color-line; }
+.contact-list div { padding: 14px 0; border-bottom: 1px solid $color-line; }
+.contact-list dt { color: $color-muted; font-size: 14px; line-height: 18px; letter-spacing: 1.2px; text-transform: uppercase; }
+.contact-list dd { margin: 6px 0 0; color: $color-footer; font-size: 16px; line-height: 26px; }
+.contact-list a[href^="tel:"] { text-decoration: none; }
+.contact-list .contact-social-links { display: flex; gap: 10px; margin-top: 8px; }
+.contact-social-links a { display: grid; width: 40px; height: 40px; place-items: center; border: 1px solid $color-ink; background: transparent; color: $color-ink; text-decoration: none; }
+.contact-social-links a:hover,
+.contact-social-links a:focus-visible { background: $color-ink; color: $color-surface; text-decoration: none; }
+.contact-social-links img { width: 19px; height: 19px; }
+.contact-social-links a:hover img,
+.contact-social-links a:focus-visible img { filter: invert(1); }
+.contact-social-links__linkedin { font-family: Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 1; letter-spacing: -1px; }
+.contact-layout .contact-form { width: 752px; height: 100%; min-height: 0; padding: 40px 48px; }
+
+@media (max-width: 899px) {
+  .contact-layout { grid-template-columns: 1fr; align-items: start; gap: 56px; width: calc(100% - 40px); max-width: none; }
+  .contact-details__lead { width: auto; margin-top: 48px; }
+  .contact-list { width: 100%; }
+  .contact-layout .contact-form { width: 100%; height: auto; min-height: 0; padding: 36px 24px; }
+}

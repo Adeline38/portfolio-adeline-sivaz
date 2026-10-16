@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as *;
+
+.site-header { position: sticky; z-index: 100; top: 0; min-height: 64px; border-bottom: 1px solid rgba($color-ink,.2); background: rgba($color-page,.98); }
+.site-header__inner { display: flex; min-height: 64px; width: 100%; max-width: 1440px; margin: 0 auto; padding: 7px 64px; align-items: center; justify-content: space-between; gap: 32px; }
+.brand { display: inline-flex; flex-direction: column; text-decoration: none; }
+.brand__name { font-family: $font-serif; font-size: 25px; font-weight: 500; line-height: 20px; letter-spacing: 1.5px; }
+.brand__job { margin-top: 4px; color: #504b46; font-family: $font-hand; font-size: 13px; line-height: 13px; letter-spacing: 2.6px; }
+.menu-toggle { display: none; width: 48px; height: 48px; place-content: center; gap: 5px; border: 1px solid $color-ink; background: transparent; }
+.menu-toggle span:not(.sr-only) { width: 22px; height: 1px; background: $color-ink; }
+.site-nav__list { display: flex; align-items: center; gap: 32px; list-style: none; }
+.site-nav a { display: block; color: $color-muted; font-size: 12.5px; line-height: 20px; letter-spacing: .72px; text-decoration: none; text-transform: uppercase; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: $color-ink; text-decoration: underline; }
+.site-nav a.nav-download {
+  display: inline-flex;
+  min-height: 38px;
+  padding: 6px 13px;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid $color-ink;
+  background: $color-ink;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.site-nav a.nav-download::after { font-size: 19px; font-weight: 400; line-height: 1; content: "↓"; transform: translateY(-1px); }
+.site-nav a.nav-download:hover,
+.site-nav a.nav-download:focus-visible { background: transparent; color: $color-ink; text-decoration: none; }
+
+@media (max-width: 899px) {
+  .site-header, .site-header__inner { min-height: 72px; }
+  .site-header__inner { width: 100%; padding: 12px 20px; }
+  .brand__name { font-size: 21px; line-height: 18px; }
+  .brand__job { margin-top: 5px; font-size: 14px; line-height: 13px; letter-spacing: 2.8px; }
+  .menu-toggle { display: grid; width: 44px; height: 44px; }
+  .site-nav { position: absolute; top: 100%; right: 0; left: 0; display: none; padding: 28px 20px 36px; border-bottom: 1px solid $color-line; background: $color-page; }
+  .site-nav.is-open { display: block; }
+  .site-nav__list { display: grid; gap: 16px; }
+}

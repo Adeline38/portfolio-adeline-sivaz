@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as *;
+
+.filters { display: flex; flex-wrap: wrap; gap: 12px; /* margin: 0 0 48px; */ }
+.filter-button, .pagination button {
+  min-height: 48px; padding: 12px 16px; border: 1px solid $color-ink; background: white; color: $color-ink;
+  font-size: 13px; font-weight: 600; line-height: 20px; letter-spacing: .4px; text-transform: uppercase;
+}
+.filter-button:hover, .filter-button[aria-pressed="true"], .pagination button[aria-current="page"] { background: $color-footer; color: white; }
+.pagination { display: flex; justify-content: center; gap: 12px; margin-top: 48px; }
+.pagination button { min-width: 48px; }

@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+
+.project-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 48px 40px; }
+.project-card { display: flex; min-width: 0; flex-direction: column; }
+.project-card__media { height: 250px; overflow: hidden; background: $color-accent; }
+.project-card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 320ms ease; }
+.project-card:hover .project-card__media img { transform: scale(1.025); }
+.project-card__body { display: flex; flex-direction: column; align-items: flex-start; padding: 19.2px 3.2px 0; }
+.project-card__technologies { display: flex; max-width: 100%; flex-wrap: wrap; gap: 0; margin: 0 0 3px; color: $color-muted; list-style: none; }
+.project-card__technologies li { padding: 0; border: 0; font-size: 11px; line-height: 16px; letter-spacing: .7px; text-transform: uppercase; }
+.project-card__technologies li:not(:last-child)::after { margin: 0 4px; content: " · "; }
+.project-card h3 { font-size: 24px; font-weight: 500; line-height: 30px; letter-spacing: 0; }
+.project-card p { min-height: 52px; margin-top: 5px; color: $color-muted; font-size: 14px; line-height: 20px; }
+.project-card__link { margin-top: 8px; font-size: 13px; font-weight: 600; line-height: 22px; letter-spacing: .8px; text-transform: uppercase; }
+
+@media (max-width: 1050px) { .project-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 640px) { .project-grid { grid-template-columns: 1fr; } .project-card__media { height: auto; aspect-ratio: 1.24; } }

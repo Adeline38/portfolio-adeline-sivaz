@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+
+.legal-content {
+  max-width: 52rem;
+}
+
+.legal-content h1 {
+  font-size: clamp(3.2rem, 7vw, 6rem);
+}
+
+.legal-content h2 {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.legal-content p,
+.legal-content ul {
+  margin-top: 1rem;
+}
+
+.not-found {
+  display: grid;
+  min-height: 65vh;
+  place-items: center;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: clamp(6rem, 18vw, 13rem);
+}

@@ -1,0 +1,55 @@
+@use "../abstracts/variables" as *;
+
+.home-hero { position: relative; height: 640px; min-height: 0; overflow: hidden; background: $color-page; }
+.home-hero__circle { position: absolute; top: 28px; left: calc(50% - 280px); width: 440px; height: 440px; border: 1px solid rgba($color-ink,.2); border-radius: 50%; }
+.home-hero__content { position: absolute; z-index: 3; top: 64px; left: max(88px,calc(50% - 632px)); width: 620px; }
+.home-hero h1 { width: 620px; margin-top: 14px; font-size: 112px; font-style: italic; font-weight: 500; line-height: .92; letter-spacing: -7px; }
+.home-hero__lead { width: 580px; margin-top: 26px; font-family: $font-serif; font-size: 29px; line-height: 34px; }
+.home-hero__intro { width: 570px; margin-top: 14px; color: $color-muted; font-size: 15px; line-height: 23px; }
+.home-hero__actions { display: flex; gap: 14px; margin-top: 26px; }
+.home-hero__art { position: absolute; z-index: 2; top: 48px; left: calc(50% + 96px); width: 430px; height: 520px; transform: rotate(1.3deg); overflow: hidden; background: $color-accent; /* box-shadow: $shadow-offset; */ }
+.home-hero__backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.home-hero__portrait { position: absolute; top: 8.17%; left: -21.24%; width: 124.24%; max-width: none; height: 100.85%; object-fit: cover; filter: drop-shadow(8px 8px 36px rgba(0,0,0,.18)); /**/ position: absolute;top: 10%; left: initial; width: 101.24%; max-width: none; height: initial; object-fit: cover;filter: drop-shadow(8px 8px 36px rgba(0, 0, 0, 0.18)); }
+
+.home-skills { padding: 60px 96px 96px; background: white; }
+.home-skills__inner { width: 100%; max-width: 1248px; margin-inline: auto; }
+.section-heading-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; margin-bottom: 40px; }
+.home-skills__body { display: grid; grid-template-columns: 520px 520px; gap: 48px; justify-content: center; }
+.home-skills__body > img { width: 520px; height: 430px; object-fit: cover; }
+.home-skills__list { list-style: none; }
+.home-skills__list li { display: grid; grid-template-columns: 44px 1fr; gap: 18px; min-height: 107px; align-items: center; border-bottom: 1px solid $color-line; }
+.home-skills__list li > span { font-family: $font-serif; font-size: 24px; }
+.home-skills__list strong { font-family: $font-serif; font-size: 24px; font-weight: 500; line-height: 30px; }
+.home-skills__list p { color: $color-muted; font-size: 13px; line-height: 19px; }
+
+.home-projects { padding: 66px 96px; background: rgba($color-soft,.96); }
+.home-projects > div { max-width: 1248px; margin-inline: auto; }
+
+.cta { position: relative; height: 430px; overflow: hidden; background: $color-ink; color: white; }
+.cta__grid { position: relative; display: grid; width: 100%; height: 100%; place-items: center; text-align: center; }
+.cta__grid::after { position: absolute; z-index: 1; inset: 0; background: rgba($color-footer,.48); content: ""; }
+.cta__grid > div { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; }
+.cta__grid > img { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; max-height: none; object-fit: cover; }
+.cta__handwriting { font-family: $font-hand; font-size: 36px; line-height: 40px; transform: rotate(-4deg); }
+.cta h2 { margin: 12px 0 24px; color: white; font-size: 72px; font-weight: 400; line-height: .88; letter-spacing: -2.8px; }
+.cta h2 em { font-weight: 400; }
+
+@media (max-width: 899px) {
+  .home-hero { height: auto; min-height: 0; padding: 56px 20px 72px; }
+  .home-hero__circle { top: 34px; right: -110px; left: auto; width: 320px; height: 320px; }
+  .home-hero__content { position: relative; top: auto; left: auto; width: 100%; }
+  .home-hero h1 { width: auto; font-size: clamp(60px,18vw,88px); line-height: .9; letter-spacing: -4px; }
+  .home-hero__lead, .home-hero__intro { width: auto; }
+  .home-hero__lead { font-size: 24px; line-height: 1.14; }
+  .home-hero__actions { flex-direction: column; align-items: flex-start; }
+  .home-hero__art { position: relative; top: auto; left: auto; width: calc(100% - 18px); height: auto; aspect-ratio: .766; margin: 64px auto 0; }
+  .home-skills, .home-projects { padding: 60px 20px 72px; }
+  .section-heading-row { align-items: flex-start; flex-direction: column; margin-bottom: 36px; }
+  .home-skills__body { grid-template-columns: 1fr; gap: 28px; }
+  .home-skills__body > img { width: 100%; height: auto; }
+  .home-skills__list li { grid-template-columns: 38px 1fr; min-height: 104px; }
+  .home-skills__list strong { font-size: 23px; line-height: 28px; }
+  .cta { height: 430px; }
+  .cta__handwriting { font-size: 29px; }
+  .cta h2 { font-size: clamp(48px,15vw,70px); line-height: .85; letter-spacing: -2px; }
+}

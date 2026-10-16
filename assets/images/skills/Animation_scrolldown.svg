@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" width="100" height="100" viewBox="0 0 100 100" style="width:100%;height:100%">
+  <defs>
+    <animateMotion repeatCount="indefinite" dur="3.003003s" begin="0s" xlink:href="#_R_G_L_0_G" fill="freeze" keyTimes="0;0.1111111;0.3333333;0.5;0.7222222;1" path="M50 28 C50,28 50,28 50,28 C50,28 50,73 50,73 C50,73 50,73 50,73 C50,73 50,28 50,28 C50,28 50,28 50,28 " keyPoints="0;0;0.5;0.5;1;1" keySplines="0.167 0.167 0.833 0.833;0.167 0.167 0.833 0.833;0.167 0.167 0.833 0.833;0.167 0.167 0.833 0.833;0.167 0.167 0.833 0.833"></animateMotion>
+  </defs>
+  <g id="_R_G">
+    <g id="_R_G_L_1_G" transform=" translate(50, 50) translate(0, 0)">
+      <path id="_R_G_L_1_G_D_0_P_0" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="4" stroke-opacity="1" d=" M25 -17.5 C25,-17.5 25,17.5 25,17.5 C25,31.3 13.8,42.5 0,42.5 C0,42.5 0,42.5 0,42.5 C-13.8,42.5 -25,31.3 -25,17.5 C-25,17.5 -25,-17.5 -25,-17.5 C-25,-31.3 -13.8,-42.5 0,-42.5 C0,-42.5 0,-42.5 0,-42.5 C13.8,-42.5 25,-31.3 25,-17.5z "></path>
+    </g>
+    <g id="_R_G_L_0_G">
+      <path id="_R_G_L_0_G_D_0_P_0" fill="#ffffff" fill-opacity="1" fill-rule="nonzero" d=" M7.5 0 C7.5,0 7.5,0 7.5,0 C7.5,4.14 4.14,7.5 0,7.5 C0,7.5 0,7.5 0,7.5 C-4.14,7.5 -7.5,4.14 -7.5,0 C-7.5,0 -7.5,0 -7.5,0 C-7.5,-4.14 -4.14,-7.5 0,-7.5 C0,-7.5 0,-7.5 0,-7.5 C4.14,-7.5 7.5,-4.14 7.5,0z "></path>
+    </g>
+  </g>
+  <g id="time_group"></g>
+</svg>

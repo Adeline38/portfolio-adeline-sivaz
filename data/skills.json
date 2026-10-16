@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "description": "Compétences regroupées par catégories pour la page Compétences.",
+    "unknownLevelLabel": "À évaluer"
+  },
+  "categories": [
+    {
+      "id": "programming-languages",
+      "title": "Langages de Programmation",
+      "titleStart": "Langages de",
+      "titleAccent": "Programmation",
+      "skills": [
+        {
+          "id": "php-natif",
+          "name": "PHP (Natif)",
+          "level": 85,
+          "icon": "../assets/images/skills/php01-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "javascript-es6-jquery",
+          "name": "JavaScript (ES6+ / jQuery)",
+          "level": 80,
+          "icon": "../assets/images/skills/javascript-155-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "html5-validation-w3c",
+          "name": "HTML5 / Validation W3C",
+          "level": 95,
+          "icon": "../assets/images/skills/html-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "css3-sass-pattern-7-1-mediaqueries",
+          "name": "CSS3 / SASS (pattern 7-1 / MediaQueries)",
+          "level": 90,
+          "icon": "../assets/images/skills/sass-svgrepo-com.svg",
+          "highlighted": true
+        }
+      ]
+    },
+    {
+      "id": "frameworks-cms",
+      "title": "Bases Libriaries et Frameworks",
+      "titleStart": "Bases Libriaries et Frameworks",
+      "titleAccent": "Libriaries et Frameworks",
+      "skills": [
+        {
+          "id": "symfony-7-doctrine-orm",
+          "name": "Symfony 7 / Doctrine (ORM)",
+          "level": 80,
+          "icon": "../assets/images/skills/symfony-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "level": 75,
+          "icon": "../assets/images/skills/react-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "prestashop",
+          "name": "PrestaShop",
+          "level": 80,
+          "icon": "../assets/images/skills/layers-3-svgrepo-com.svg",
+          "highlighted": false
+        },
+        {
+          "id": "wordpress",
+          "name": "WordPress",
+          "level": 75,
+          "icon": "../assets/images/skills/earth-globe.svg",
+          "highlighted": false
+        },
+        {
+          "id": "magento-1-et-2",
+          "name": "Magento 1 et 2",
+          "level": 90,
+          "icon": "../assets/images/skills/layers-1-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "drupal",
+          "name": "Drupal",
+          "level": 50,
+          "icon": "../assets/images/skills/world-wide-web-internet-connection-black-outline-17710.svg",
+          "highlighted": false
+        },
+        {
+          "id": "webpublisher-social-shaker",
+          "name": "WebPublisher / Social Shaker",
+          "level": 65,
+          "icon": "../assets/images/skills/earth-globe.svg",
+          "highlighted": false
+        }
+      ]
+    },
+    {
+      "id": "integration-frontend",
+      "title": "Intégration & Frontend",
+      "titleStart": "Intégration",
+      "titleAccent": "& Frontend",
+      "skills": [
+        {
+          "id": "responsive-design",
+          "name": "Responsive Design",
+          "level": 95,
+          "icon": "../assets/images/skills/world-wide-web-internet-connection-black-outline-17710.svg",
+          "highlighted": true
+        },
+        {
+          "id": "templates-adaptatifs-grilles-fluides",
+          "name": "Templates adaptatifs / Grilles fluides",
+          "level": 95,
+          "icon": "../assets/images/skills/layers-1-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "manipulation-du-dom-fetch-async-await",
+          "name": "Manipulation du DOM / Fetch / Async-Await",
+          "level": 80,
+          "icon": "../assets/images/skills/javascript-155-svgrepo-com.svg",
+          "highlighted": false
+        },
+        {
+          "id": "tailwind-css",
+          "name": "Tailwind CSS",
+          "level": 90,
+          "icon": "../assets/images/skills/tailwind-css-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "bootstrap",
+          "name": "Bootstrap",
+          "level": 90,
+          "icon": "../assets/images/skills/bootstrap-fill-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "foundation-960gs",
+          "name": "Foundation / 960gs",
+          "level": 70,
+          "icon": "../assets/images/skills/layers-3-svgrepo-com.svg",
+          "highlighted": false
+        }
+      ]
+    },
+    {
+      "id": "ui-ux-graphic-design",
+      "title": "Conception UI/UX & Design Graphic",
+      "titleStart": "Conception UI/UX",
+      "titleAccent": "& Design Graphique",
+      "skills": [
+        {
+          "id": "maquettage-wireframing",
+          "name": "Maquettage, Wireframing",
+          "level": 90,
+          "icon": "../assets/images/skills/figma-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "design-systems",
+          "name": "Design Systems",
+          "level": 90,
+          "icon": "../assets/images/skills/layers-3-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "figma-adobe-xd-creative-suite",
+          "name": "Figma, Adobe XD, Adobe Creative Suite (Photoshop, Illustrator, InDesign)",
+          "level": 90,
+          "icon": "../assets/images/skills/adobe-svgrepo-com.svg",
+          "highlighted": true
+        },
+        {
+          "id": "prototypage-interactif",
+          "name": "Prototypage interactif",
+          "level": 70,
+          "icon": "../assets/images/skills/adobe-xd-svgrepo-com.svg",
+          "highlighted": false
+        },
+        {
+          "id": "axure-adobe-xd",
+          "name": "Axure / Adobe XD",
+          "level": 70,
+          "icon": "../assets/images/skills/adobe-xd-svgrepo-com.svg",
+          "highlighted": false
+        }
+      ]
+    }
+  ]
+}
