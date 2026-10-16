@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-adeline-sivaz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio professionnel multipage d’Adeline Sivaz.",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css --watch --source-map",
+    "build": "sass scss/main.scss css/main.css --style=compressed --no-source-map",
+    "validate": "node scripts/validate-site.mjs",
+    "build:dist": "node scripts/build-dist.mjs",
+    "ci": "npm run build && npm run validate && npm run build:dist"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

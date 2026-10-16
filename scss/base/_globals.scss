@@ -1,0 +1,77 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+html { color-scheme: light; scroll-padding-top: 64px; }
+
+body {
+  min-width: 320px;
+  background: $color-page;
+  color: $color-ink;
+  font-family: $font-sans;
+  font-size: 15px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+body.menu-open,
+body.modal-open { overflow: hidden; }
+
+a { color: inherit; text-underline-offset: .22em; @include focus-ring; }
+button, input, select, textarea { @include focus-ring; }
+h1, h2, h3 { font-family: $font-serif; font-weight: 400; line-height: .96; }
+
+.skip-link {
+  position: fixed; z-index: 1000; top: 12px; left: 12px; padding: 12px 16px;
+  transform: translateY(-160%); background: $color-ink; color: white;
+  &:focus { transform: translateY(0); }
+}
+
+.container { width: calc(100% - 192px); max-width: 1248px; margin-inline: auto; }
+.section { padding: 52px 0 96px; }
+.section--white { background: white; }
+
+.eyebrow {
+  display: flex; align-items: center; gap: 12px; color: $color-muted;
+  font-size: 13px; font-weight: 600; line-height: 20px; letter-spacing: 1.4px; text-transform: uppercase;
+  &::before { width: 45px; height: 1px; flex: 0 0 45px; background: currentColor; content: ""; }
+}
+
+.section-title {
+  margin-top: 14px; font-size: 72px; line-height: .96; letter-spacing: -2.8px;
+}
+
+.page-hero { position: relative; height: 640px; min-height: 0; overflow: hidden; background: $color-page; }
+.page-hero__grid { position: relative; width: 100%; height: 100%; }
+.page-hero__circle { position: absolute; top: 28px; left: calc(50% - 280px); width: 440px; height: 440px; border: 1px solid rgba($color-ink,.2); border-radius: 50%; }
+.page-hero__content { position: absolute; z-index: 2; top: 64px; left: max(88px, calc(50% - 632px)); width: 620px; }
+.display-title { width: 620px; margin-top: 14px; font-size: 112px; font-style: italic; font-weight: 500; line-height: .82; letter-spacing: -7px; }
+.page-hero__lead { width: 580px; margin-top: 32px; font-family: $font-serif; font-size: 29px; line-height: 34px; }
+.page-hero__text { width: 570px; margin-top: 14px; color: $color-muted; font-size: 15px; line-height: 23px; }
+.page-hero__content > .button { margin-top: 26px; }
+.page-hero__visual { position: absolute; z-index: 1; top: 48px; left: calc(50% + 96px); width: 430px; height: 520px; transform: rotate(1.3deg); background: $color-accent; /* box-shadow: $shadow-offset; */ overflow: hidden; }
+.page-hero__visual img { width: 100%; height: 100%; object-fit: cover; }
+
+.loading-message, .empty-message, .error-message { grid-column: 1 / -1; padding: 32px; border: 1px solid $color-line; text-align: center; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+@media (max-width: 899px) {
+  html { scroll-padding-top: 72px; }
+  .container { width: calc(100% - 40px); }
+  .section { padding: 52px 0 72px; }
+  .eyebrow { font-size: 12px; line-height: 18px; gap: 10px; }
+  .eyebrow::before { width: 32px; flex-basis: 32px; }
+  .section-title { font-size: clamp(44px, 11vw, 64px); line-height: .96; letter-spacing: -2px; }
+  .page-hero { height: auto; min-height: 0; padding: 56px 20px 72px; }
+  .page-hero__grid { display: flex; flex-direction: column; gap: 52px; }
+  .page-hero__circle { top: 38px; right: -110px; left: auto; width: 320px; height: 320px; }
+  .page-hero__content { position: relative; top: auto; left: auto; width: 100%; }
+  .display-title { width: auto; font-size: clamp(60px, 20vw, 92px); line-height: .86; letter-spacing: -4px; }
+  .page-hero__lead, .page-hero__text { width: auto; }
+  .page-hero__lead { margin-top: 28px; font-size: 24px; line-height: 1.14; }
+  .page-hero__visual { position: relative; top: auto; left: auto; width: calc(100% - 18px); height: auto; aspect-ratio: .765; align-self: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}

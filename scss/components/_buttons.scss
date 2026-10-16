@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+
+.button {
+  display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 13px;
+  padding: 12.8px 18.4px; border: 1px solid $color-ink; background: $color-ink; color: white;
+  font-size: 16px; font-weight: 600; line-height: 25.6px; letter-spacing: .8704px; text-decoration: none; text-transform: uppercase;
+  transition: background $transition, color $transition;
+}
+.button::after { content: "→"; }
+.button:hover { background: transparent; color: $color-ink; }
+.button--outline { background: transparent; color: $color-ink; }
+.button--outline:hover { background: $color-ink; color: white; }
+.button--transparent { border-color: white; background: transparent; color: white; }
+.button--transparent:hover { background: white; color: $color-ink; }
+.button--disabled { border-color: $color-line; background: transparent; color: $color-muted; cursor: not-allowed; opacity: .7; }
+.text-link { display: inline-flex; align-items: center; gap: 10px; font-size: 16px; line-height: 25.6px; letter-spacing: 1.12px; text-decoration: none; text-transform: uppercase; }
+.text-link:hover,
+.text-link:focus-visible { text-decoration: none; opacity: .65; }
+.text-link::after { content: "→"; }
+
+@media (max-width: 899px) {
+  .button { min-height: 44px; padding: 10px 14px; font-size: 12px; line-height: 20px; }
+}

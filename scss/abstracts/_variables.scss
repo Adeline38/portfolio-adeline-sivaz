@@ -1,0 +1,15 @@
+$color-page: #faf8f4;
+$color-surface: #ffffff;
+$color-soft: #ede9e1;
+$color-accent: #c9c1b8;
+$color-line: #b8b2ab;
+$color-ink: #171717;
+$color-footer: #0f0f0f;
+$color-muted: #5b5853;
+$font-sans: "Inter", Arial, sans-serif;
+$font-serif: "Source Serif 4", Georgia, serif;
+$font-hand: "Caveat", cursive;
+$container: 1312px;
+$page-gutter: clamp(1.25rem, 4.45vw, 4rem);
+$shadow-offset: 18px 20px 0 $color-ink;
+$transition: 180ms ease;

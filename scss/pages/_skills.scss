@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+
+.skills-list { display: block; }
+.skill-section { min-height: 620px; padding: 56px 0 80px; background: white; }
+.skill-section:nth-child(even) { background: rgba($color-soft,.96); }
+.skill-section__header { margin-bottom: 36px; }
+.skill-section__header h2 { margin-top: 14px; font-size: 54px; line-height: 1; letter-spacing: -2.2px; }
+.skill-section__grid { display: grid; grid-template-columns: 400px 540px; align-items: stretch; justify-content: start; gap: 108px; }
+.skill-section__visual { position: relative; min-height: 0; overflow: hidden; }
+.skill-section__visual img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.skill-items { list-style: none; }
+.skill-item { display: grid; grid-template-columns: 1fr 48px; min-height: 84px; align-items: center; column-gap: 16px; }
+.skill-item > span { font-family: $font-serif; font-size: 24px; font-weight: 500; line-height: 30px; }
+.skill-item > img { width: auto; max-width: 52px; height: 40px; justify-self: end; object-fit: contain; }
+.skill-item__bar { grid-column: 1 / -1; width: 100%; height: 2px; overflow: hidden; border: 0; border-radius: 0; appearance: none; -webkit-appearance: none; background: #c7c7c7; color: $color-footer; accent-color: $color-footer; }
+.skill-item__bar::-webkit-progress-bar { background-color: #c7c7c7; }
+.skill-item__bar::-webkit-progress-value { background-color: $color-footer; }
+.skill-item__bar::-moz-progress-bar { background-color: $color-footer; }
+.skill-section:nth-child(even) .skill-section__visual { order: 2; }
+.skill-section:nth-child(even) .skill-section__grid { grid-template-columns: 540px 400px; }
+
+@media (max-width: 899px) {
+  .skill-section { min-height: 0; padding: 52px 0 72px; }
+  .skill-section__header h2 { font-size: clamp(40px,10vw,56px); line-height: .98; }
+  .skill-section__grid, .skill-section:nth-child(even) .skill-section__grid { grid-template-columns: 1fr; gap: 36px; }
+  .skill-section:nth-child(even) .skill-section__visual { order: 0; }
+  .skill-section__visual { overflow: visible; }
+  .skill-section__visual img { position: static; width: 100%; height: auto; max-height: 430px; }
+  .skill-item { min-height: 88px; }
+  .skill-item > span { font-size: 23px; line-height: 28px; }
+}

@@ -1,0 +1,101 @@
+name: Déploiement en production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production
+  cancel-in-progress: false
+
+env:
+  OVH_REMOTE_PATH: adelinesivaz
+  PRODUCTION_URL: https://adelinesivaz.com
+
+jobs:
+  build:
+    name: Construire l’artefact
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Configurer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Compiler, valider et préparer la publication
+        run: npm run ci
+
+      - name: Conserver l’artefact de production
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-${{ github.sha }}
+          path: dist/
+          if-no-files-found: error
+          retention-days: 30
+
+  deploy:
+    name: Publier chez OVHcloud
+    needs: build
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Télécharger l’artefact validé
+        uses: actions/download-artifact@v4
+        with:
+          name: production-${{ github.sha }}
+          path: dist/
+
+      - name: Configurer la connexion SSH
+        env:
+          OVH_SSH_PRIVATE_KEY: ${{ secrets.OVH_SSH_PRIVATE_KEY }}
+          OVH_KNOWN_HOSTS: ${{ secrets.OVH_KNOWN_HOSTS }}
+        run: |
+          test -n "$OVH_SSH_PRIVATE_KEY"
+          test -n "$OVH_KNOWN_HOSTS"
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$OVH_SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          printf '%s\n' "$OVH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/id_ed25519 ~/.ssh/known_hosts
+
+      - name: Sauvegarder la version actuellement publiée
+        env:
+          OVH_SSH_HOST: ${{ secrets.OVH_SSH_HOST }}
+          OVH_SSH_USER: ${{ secrets.OVH_SSH_USER }}
+          OVH_SSH_PORT: ${{ vars.OVH_SSH_PORT }}
+        run: |
+          port="${OVH_SSH_PORT:-22}"
+          timestamp="$(date -u +%Y%m%d-%H%M%S)"
+          ssh -p "$port" "$OVH_SSH_USER@$OVH_SSH_HOST" \
+            "mkdir -p '$OVH_REMOTE_PATH' '.deploy-backups' && if find '$OVH_REMOTE_PATH' -mindepth 1 -maxdepth 1 -print -quit | grep -q .; then tar -czf '.deploy-backups/adelinesivaz-$timestamp.tar.gz' -C '$OVH_REMOTE_PATH' .; fi"
+
+      - name: Déployer l’artefact validé
+        env:
+          OVH_SSH_HOST: ${{ secrets.OVH_SSH_HOST }}
+          OVH_SSH_USER: ${{ secrets.OVH_SSH_USER }}
+          OVH_SSH_PORT: ${{ vars.OVH_SSH_PORT }}
+        run: |
+          port="${OVH_SSH_PORT:-22}"
+          rsync -az --delete --exclude='.well-known/' \
+            -e "ssh -p $port" \
+            dist/ "$OVH_SSH_USER@$OVH_SSH_HOST:$OVH_REMOTE_PATH/"
+
+      - name: Vérifier le site publié
+        run: curl --fail --location --retry 5 --retry-delay 5 "$PRODUCTION_URL"
+
+      - name: Supprimer la clé du runner
+        if: always()
+        run: rm -f ~/.ssh/id_ed25519

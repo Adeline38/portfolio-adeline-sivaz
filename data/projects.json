@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "description": "Données utilisées pour afficher et filtrer les projets du portfolio.",
+    "defaultImage": "../assets/images/illustrations/project-design-work.png",
+    "featuredIcon": "../assets/images/icons/arrow-dark.svg"
+  },
+  "filters": [
+    { "id": "all", "label": "Tout" },
+    { "id": "crea", "label": "DA / CRÉA" },
+    { "id": "misenepage", "label": "MISE EN PAGE" },
+    { "id": "figma", "label": "FIGMA" },
+    { "id": "photoshop", "label": "PHOTOSHOP" },
+    { "id": "illustrator", "label": "ILLUSTRATOR" },
+    { "id": "firefly", "label": "GÉNÉRATION IMG IA FIREFLY" },
+    { "id": "htmlcss", "label": "HTML/CSS" },
+    { "id": "sass", "label": "SASS" },
+    { "id": "tailwind", "label": "TAILWIND" },
+    { "id": "bootstrap", "label": "BOOSTRAP" },
+    { "id": "javascript", "label": "JAVASCRIPT" },
+    { "id": "json", "label": "JSON" },
+    { "id": "api", "label": "API" },
+    { "id": "ajax", "label": "AJAX" },
+    { "id": "mvc", "label": "MVC" },
+    { "id": "php", "label": "PHP" },
+    { "id": "mysql", "label": "MYSQL" },
+    { "id": "symfony", "label": "SYMFONY" },
+    { "id": "react", "label": "REACT" },
+    { "id": "logo", "label": "IDENTITÉ" },
+    { "id": "iconographie", "label": "ICONOGRAPHIE" },
+    { "id": "designsystem", "label": "DESIGN SYSTEM" },
+    { "id": "ecommerce", "label": "E-COMMERCE" },
+    { "id": "frontend", "label": "FRONT-END" },
+    { "id": "backend", "label": "BACK-END" },
+    { "id": "application", "label": "APPLICATION" },
+    { "id": "fullstack", "label": "FULL STACK" },
+    { "id": "motion", "label": "MOTION" },
+    { "id": "prototype", "label": "PROTOTYPE" },
+    { "id": "accessibilite", "label": "ACCESSIBILITÉ" }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio Adeline",
+      "technologies": ["crea", "misenepage", "photoshop", "illustrator", "htmlcss", "sass", "javascript", "json", "logo", "iconographie"],
+      "resume": "Récapitulatif de mon expérience professionnelle depuis 25 ans.",
+      "description": "Vitrine numérique professionnelle développée sous forme de site multipage performant. Alimenté par des fichiers JSON pour les contenus dynamiques, le site propose une navigation claire, des galeries réactives et respecte les bonnes pratiques d’accessibilité web.",
+      "coverImage": {"url": "../assets/images/projects/portfolio/2026-10-16 10_09_54-Greenshot - Copie.png", "alt": "Capture de la page d'accueil principale du portfolio d'Adeline SIVAZ"},
+      "gallery": [
+        {"url": "../assets/images/illustrations/hero-collage.png", "alt": "Vue détaillée de l'interface bureau"},
+        {"url": "../assets/images/illustrations/workspace-devices.png", "alt": "Aperçu de la version mobile responsive"},
+        {"url": "../assets/images/illustrations/project-design-work.png", "alt": "Structure de l'architecture de fichiers JSON"}
+      ],
+      "status": { "id": "production", "label": "En production" },
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Keria living",
+      "technologies": ["crea", "misenepage", "photoshop", "illustrator", "firefly", "htmlcss", "logo", "iconographie"],
+      "resume": "Intégration front e-commerce multi-marques : cohérence graphique et performances boostées de 30% et conversion optimisée.",
+      "description": "Supervision technique, graphique et intégration front-end responsive pour l'écosystème e-commerce multi-marques du groupe. Optimisation globale des parcours de conversion et amélioration des performances de chargement des plateformes de 30% via un code propre et refonte complète des entonnoirs d'achat.",
+      "coverImage": {
+        "url": "../assets/images/projects/kerialiving/téléchargement.webp",
+        "alt": "Capture de l’interface e-commerce multi-marques du groupe Keria Living"
+      },
+      "gallery": [
+        { "url": "../assets/images/projects/kerialiving/images.jpg", "alt": "Vue détaillée du tunnel de commande optimisé sur Keria Living" },
+        { "url": "../assets/images/projects/kerialiving/images (1).jpg", "alt": "Déclinaison responsive mobile et tablette de l'interface Keria Living" },
+        { "url": "../assets/images/projects/kerialiving/hq720.jpg", "alt": "Aperçu des grilles de produits et filtres de recherche e-commerce" }
+      ],
+      "status": {"id": "production", "label": "En production"},
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Laurie lumière",
+      "technologies": ["crea", "misenepage", "photoshop", "illustrator", "firefly", "htmlcss", "iconographie"],
+      "resume": "Création graphique et mood board graphique et landing pages pixel-perfect de haute cohérence.",
+      "description": "Garantie de la cohérence visuelle et maintenance évolutive des tunnels de commande de la marque Laurie Lumière. Déclinaison d'ambiances produits optimisées par intelligence artificielle et intégration pixel-perfect des landing pages thématiques.",
+      "coverImage": {
+        "url": "../assets/images/projects/laurie/la-lumiere.webp",
+        "alt": "Capture de la landing page et de l'interface Laurie Lumière"
+      },
+      "gallery": [
+        { "url": "../assets/images/projects/laurie/Home-shop-18.jpg", "alt": "Mood board graphique et intégration des ambiances produits IA" },
+        { "url": "../assets/images/projects/laurie/Manhattan-Squarespace-Template-copy-hq.webp", "alt": "Détail d'une landing page thématique événementielle pixel-perfect" },
+        { "url": "../assets/images/projects/laurie/septembre2023laurie-lumiere2407202330092023S0C0laurie-lumiere-1.jpg", "alt": "Interface responsive du panier d'achat Laurie Lumière" }
+      ],
+      "status": {"id": "production", "label": "En production"},
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "Qui Dit Mieux",
+      "technologies": ["figma", "htmlcss", "sass", "bootstrap", "javascript", "json", "api", "ajax", "php", "mvc", "mysql"],
+      "resume": "Plateforme d'enchères en PHP/MVC : modèle SQL, authentification et formulaires sécurisés.",
+      "description": "Plateforme web adaptative d'enchères en ligne et de petites annonces entre particuliers. Développée en PHP natif sous une architecture MVC robuste, elle intègre une modélisation de données SQL pour l'historique des offres, la sécurisation des formulaires et une authentification complète.",
+      "coverImage": {
+        "url": "../assets/images/projects/quiditmieux/image+2-1920w.webp",
+        "alt": "Capture de l’interface principale du projet d'enchères en ligne Qui Dit Mieux"
+      },
+      "gallery": [
+        { "url": "../assets/images/projects/quiditmieux/quiditmieux_accueil.png", "alt": "Tableau de bord utilisateur et gestion du profil des enchérisseurs" },
+        { "url": "../assets/images/projects/quiditmieux/quiditmieux_inscription.png", "alt": "Formulaire sécurisé de dépôt d'annonce et historique des offres en temps réel" },
+        { "url": "../assets/images/projects/quiditmieux/web-encheres.jpg.jpg", "alt": "Maquettes Figma initiales et schémas d'architecture de la base de données SQL" }
+      ],
+      "status": {"id": "production", "label": "En production"},
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "Monteleone",
+      "technologies": ["crea", "misenepage", "photoshop", "firefly", "htmlcss", "iconographie"],
+      "resume": "Mobile-first e-commerce : grilles fluides pour le contenu et campagnes d'emailing responsives.",
+      "description": "Intégration mobile-first et optimisation de l'expérience utilisateur (UX) pour la marque de linge de maison du groupe. Déploiement de grilles fluides pour l'affichage du contenu des pages et création de campagnes d'emailing e-commerce responsives.",
+      "coverImage": {
+        "url": "../assets/images/projects/monteleone/625880615_18088846303874911_5382972470468049332_n.jpg",
+        "alt": "Capture de l’interface principale du projet e-commerce Monteleone"
+      },
+      "gallery": [
+        { "url": "../assets/images/projects/monteleone/monteleone_voila-l-ete-remise.jpg", "alt": "Démonstration des grilles fluides sur écran mobile" },
+        { "url": "../assets/images/projects/monteleone/monteleone_merci-pour-votre-douceur.jpg", "alt": "Maquette graphique d'une campagne d'emailing responsive pour Monteleone" },
+        { "url": "../assets/images/projects/monteleone/monteleone_liquidation-totale.jpg", "alt": "Zoom sur l'ergonomie des fiches produits de linge de maison" }
+      ],
+      "status": {"id": "production", "label": "En production"},
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Voisin",
+      "technologies": ["figma", "htmlcss", "sass", "bootstrap", "javascript", "json", "api", "ajax", "php", "mvc", "mysql", "symfony"],
+      "resume": "Application web communautaire et collaborative dédiée au partage et à l'échange de services de proximité.",
+      "description": "Application web communautaire et collaborative dédiée au partage et à l'échange de services de proximité. Conçue avec le framework Symfony et Doctrine ORM, elle propose une messagerie privée asynchrone et un fil d'actualité filtré.",
+      "coverImage": {
+        "url": "../assets/images/projects/voisin/9d3f9c22191ac5274a059d9ebe014779157d538b.png",
+        "alt": "Capture de l’interface principale de la plateforme d'entraide locale Voisins"
+      },
+      "gallery": [
+        { "url": "../assets/images/projects/voisin/9d3f9c22191ac5274a059d9ebe014779157d538b.png", "alt": "Fil d'actualité dynamique filtré par géolocalisation et types de services" },
+        { "url": "../assets/images/projects/voisin/VOISIN_ecran-d-accueil.png", "alt": "Interface de la messagerie privée asynchrone entre voisins" },
+        { "url": "../assets/images/projects/voisin/9d3f9c22191ac5274a059d9ebe014779157d538b.png", "alt": "Formulaire d'inscription et flux de validation des services partagés" }
+      ],
+      "status": {"id": "production", "label": "En production"},
+      "featured": true
+    },
+    {
+      "id": 7,
+      "title": "Les trésors de Lily",
+      "technologies": ["crea", "misenepage", "photoshop", "illustrator", "htmlcss", "iconographie"],
+      "resume": "Direction artistique, design d'interaction UI et optimisation visuelle des fiches produits.",
+      "description": "Boutique en ligne d'accessoires et de cadeaux. Réalisation de la direction artistique pour l’harmonisation globale de l'interface utilisateur (UI) et du design d'interaction du site marchand e-commerce afin d'assurer l'attractivité des fiches produits et d'optimiser la cohérence visuelle.",
+      "coverImage": {
+        "url": "../assets/images/projects/ltdl/ltdl_bouche-bijoux.jpg",
+        "alt": "Capture de l’interface de la boutique en ligne Les Trésors de Lily"
+      },
+      "gallery": [
+        { "url": "../assets/images/projects/ltdl/ltdl_bouche-bijoux.jpg", "alt": "Détail de la direction artistique appliquée sur les fiches produits" },
+        { "url": "../assets/images/projects/ltdl/SiteMagento2015_ltdl_nl_1190x848-2.jpg", "alt": "Composants d'interaction UI et boutons d'action du panier marchand" },
+        { "url": "../assets/images/projects/ltdl/Desigual-2015_ltdl_nl_1190x848-5.jpg", "alt": "Déclinaison responsive de la grille de catalogue Les Trésors de Lily" }
+      ],
+      "status": {"id": "production", "label": "En production"},
+      "featured": false
+    },
+    {
+      "id": 8,
+      "title": "Lexio",
+      "technologies": ["crea", "htmlcss", "photoshop", "react"],
+      "resume": "Utilisation de composants et intégration JSX d'une interface épurée de liseuse.",
+      "description": "À Définir",
+      "coverImage": {
+        "url": "../assets/images/projects/react/liseuse.png",
+        "alt": "Capture de l’interface principale de liseuse."
+      },
+      "gallery": [
+        { "url": "../assets/images/illustrations/project-design-work.png", "alt": "Découpage en composants réutilisables de l'interface de la liseuse" },
+        { "url": "../assets/images/illustrations/workspace-devices.png", "alt": "Détail de l'affichage typographique et des options du mode sombre en JSX" },
+        { "url": "../assets/images/illustrations/skills-frameworks.png", "alt": "Architecture React et gestion de l'état local du catalogue de livres" }
+      ],
+      "status": {"id": "production", "label": "En production"},
+      "featured": false
+    },
+    {
+      "id": 9,
+      "title": "Wauquiez",
+      "technologies": ["crea", "misenepage", "photoshop"],
+      "resume": "Graphisme, maquettage et intégration responsive pour valoriser un savoir-faire artisanal.",
+      "description": "Vitrine numérique haut de gamme pour un constructeur de voiliers d'exception. Conception graphique complète, maquettage structurel et intégration responsive du site de la marque pour mettre en valeur le savoir-faire artisanal et l'ingénierie navale des chantiers navals.",
+      "coverImage": {
+        "url": "../assets/images/projects/wauquiez/Capture d'écran 2026-10-05 143527.png",
+        "alt": "Capture de l’interface principale et vitrine haut de gamme de Wauquiez"
+      },
+      "gallery": [
+        { "url": "../assets/images/projects/wauquiez/09_Wauquiez_06_actualites.jpg", "alt": "Maquettes structurelles dédiées à la mise en valeur des voiliers haut de gamme" },
+        { "url": "../assets/images/projects/wauquiez/10_Wauquiez_07_FicheBateau_galeriephotos.jpg", "alt": "Galerie immersive plein écran affichant l'artisanat et l'ingénierie navale" },
+        { "url": "../assets/images/projects/wauquiez/11_Wauquiez_07_FicheBateau_presentation.jpg", "alt": "Aperçu responsive mobile des fiches techniques des bateaux Wauquiez" }
+      ],
+      "status": {"id": "production", "label": "En production"},
+      "featured": false
+    },
+    {
+      "id": 10,
+      "title": "Seadoo",
+      "technologies": ["crea", "misenepage", "photoshop", "illustrator", "iconographie"],
+      "resume": "Interface tactile sur mesure, graphisme global et animations multimédias (flash).",
+      "description": "Conception d'une interface sur mesure développée pour des bornes tactiles interactives à destination du réseau de distribution physique de la marque de motomarines. Création graphique globale et développement d'animations multimédias et vectorielles dynamiques.",
+      "coverImage": {
+        "url": "../assets/images/projects/seadoo/seadoo-accueil.jpg",
+        "alt": "Capture de l'interface utilisateur de la borne interactive tactile Seadoo"
+      },
+      "gallery": [
+        { "url": "../assets/images/projects/seadoo/images.jpg", "alt": "Écrans de navigation du catalogue produit pour l'interface tactile physique" },
+        { "url": "../assets/images/projects/seadoo/ima-image-29651.jpg", "alt": "Détail des animations multimédias vectorielles et des boutons sur mesure" },
+        { "url": "../assets/images/projects/seadoo/seadoo-brp-accueil.jpg", "alt": "Vue globale du design d'icônes et de l'habillage graphique de la borne" }
+      ],
+      "status": {"id": "production", "label": "En production"},
+      "featured": false
+    },
+    {
+      "id": 11,
+      "title": "Eugène Perma",
+      "technologies": ["crea", "illustrator", "misenepage"],
+      "resume": "Production d'illustrations vectorielles thématiques, choix chromatiques et mise en forme.",
+      "description": "Production d'illustrations vectorielles thématiques originales pour la rubrique Astrologie du magazine de la marque. Conception des visuels, choix de la palette chromatique, mise en page et préparation des fichiers pour l'impression.",
+      "coverImage": {
+      "url": "../assets/images/projects/eugene-perma/dermatologica-332x179.jpg",
+      "alt": "Capture de la double-page illustrée pour le magazine Eugène Perma"
+      },
+      "gallery": [
+      { "url": "../assets/images/projects/eugene-perma/eugene-perma-pg1.jpg", "alt": "Zoom sur les détails des illustrations vectorielles thématiques d'Astrologie" },
+      { "url": "../assets/images/projects/eugene-perma/eugene-perma-pg2.jpg", "alt": "Visualisation de la mise en page PAO de la double-page du magazine" },
+      { "url": "../assets/images/projects/eugene-perma/eugene-perma-pg3.jpg", "alt": "Nuancier et palettes de choix chromatiques pour l'impression finale" }
+      ],
+      "status": {"id": "production", "label": "En production"},
+      "featured": false
+    }
+  ]
+}

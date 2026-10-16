@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "description": "Expériences professionnelles et formations affichées dans la frise de la page À propos.",
+    "order": "newest-first"
+  },
+  "filters": [
+    {
+      "id": "all",
+      "label": "Tout"
+    },
+    {
+      "id": "training",
+      "label": "Formations"
+    },
+    {
+      "id": "experience",
+      "label": "Expériences professionnelles"
+    }
+  ],
+  "experiences": [
+    {
+      "id": 1,
+      "period": "2026",
+      "tag": "FORMATION · CERTIFICATION",
+      "title": "Développeuse web FULL STACK",
+      "organization": "WEBECOM - À distance",
+      "description": "Titre professionnel RNCP 37805. Apprentissage intensif du front-end, du back-end, des bases de données et du déploiement : PHP, Symfony, React, JavaScript et SQL.",
+      "categoryId": "training",
+      "categoryLabel": "Formations"
+    },
+    {
+      "id": 2,
+      "period": "2015 – 2025",
+      "tag": "Expériences professionnelles",
+      "title": "Responsable de la création digitale & webmastering",
+      "organization": "Keria Living - Échirolles (38)",
+      "description": "Cohérence visuelle et fonctionnelle des sites e-commerce du groupe. Intégration HTML5/CSS3 responsive, mobile first, optimisation des performances, maintenance évolutive et amélioration du parcours client.",
+      "categoryId": "experience",
+      "categoryLabel": "Expériences professionnelles"
+    },
+    {
+      "id": 3,
+      "period": "2014 - 2015",
+      "tag": "Expériences professionnelles",
+      "title": "Direction artistique",
+      "organization": "Les Trésors de Lily - Villard-Bonnot (38)",
+      "description": "Harmonisation de l’identité visuelle et fonctionnelle du site e-commerce afin d’assurer une expérience cohérente, attractive et fidèle à la marque française.",
+      "categoryId": "experience",
+      "categoryLabel": "Expériences professionnelles"
+    },
+    {
+      "id": 4,
+      "period": "2004 - 2014",
+      "tag": "Expériences professionnelles",
+      "title": "Webdesigner",
+      "organization": "La Bonne Agence - Grenoble (38)",
+      "description": "Conception et intégration pixel-perfect en HTML sémantique et CSS pour des grands comptes : Schneider, Orange, SFR, CNR, Opinel et France Montagnes. SEO, compatibilité cross-browser, SVN, Bootstrap et Drupal.",
+      "categoryId": "experience",
+      "categoryLabel": "Expériences professionnelles"
+    },
+    {
+      "id": 5,
+      "period": "2001 - 2004",
+      "tag": "Expériences professionnelles",
+      "title": "Designer web",
+      "organization": "SQLI - Lyon 1er (69)",
+      "description": "Création de sites vitrines et événementiels pour des grands comptes : Michelin, Renault Trucks, SGS, Roche, Maped, retouche d’images, chartes graphiques online et PDF, ainsi que des animations Flash pour une borne interactive du Musée de Vienne.",
+      "categoryId": "experience",
+      "categoryLabel": "Expériences professionnelles"
+    },
+    {
+      "id": 6,
+      "period": "1998 – 2000",
+      "tag": "FORMATION · DSAA",
+      "title": "DSAA - Diplôme Supérieur d’Arts Appliqués en Communication Visuelle",
+      "organization": "La Martinière Terreaux - Lyon 1er (69)",
+      "description": "Formation supérieure approfondie dédiée à la communication visuelle, au design graphique et à la stratégie de marque.",
+      "categoryId": "training",
+      "categoryLabel": "Formations"
+    },
+    {
+      "id": 7,
+      "period": "1995 – 1998",
+      "tag": "FORMATION · BTS",
+      "title": "BTS Communication Visuelle",
+      "organization": "La Martinière Terreaux - Lyon 1er (69)",
+      "description": "Précédé d'une classe de MANAA (Prépa mise à Niveau en Arts Appliqués). Étude des fondamentaux du design graphique, de l'édition et de l'identité visuelle.",
+      "categoryId": "training",
+      "categoryLabel": "Formations"
+    },
+    {
+      "id": 8,
+      "period": "1995",
+      "tag": "FORMATION · UNIVERSITÉ",
+      "title": "Double DEUG · Espagnol / Histoire de l’art",
+      "organization": "Université — Faculté de Lyon — Lyon 8e (69)",
+      "description": "Cursus secondaire avec spécialisation en expression littéraire, logique philosophique, mathématiques et option approfondie en dessin.",
+      "categoryId": "training",
+      "categoryLabel": "Formations"
+    },
+    {
+      "id": 9,
+      "period": "1994",
+      "tag": "FORMATION · BACCALAURÉAT",
+      "title": "BAC A1 - Lettres, Philosophie & Mathématiques (Option Dessin)",
+      "organization": "Institution des Chartreux — Lyon 1er (69)",
+      "description": "Cursus secondaire avec spécialisation en expression littéraire, logique philosophique, mathématiques et option approfondie en dessin.",
+      "categoryId": "training",
+      "categoryLabel": "Formations"
+    }
+  ]
+}

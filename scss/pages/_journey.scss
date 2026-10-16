@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as *;
+
+.journey-section { padding: 52px 0 96px; }
+.journey-section .filters { margin-top: 40px; }
+.timeline { position: relative; display: grid; grid-template-columns: 520px 144px 520px; grid-auto-rows: 216px; column-gap: 32px; width: 1248px; max-width: 100%; margin: 0 auto; }
+.timeline::before { position: absolute; top: 108px; bottom: 108px; left: 50%; width: 1px; background: $color-ink; content: ""; }
+.timeline-card { position: relative; grid-row: var(--timeline-row); grid-column: 3; width: 520px; min-height: 0; align-self: center; padding: 20px 32px; border: 1px solid $color-line; background: white; }
+.timeline-card:nth-child(even) { grid-column: 1; }
+.timeline-card--training { border: 0; background: $color-soft; }
+.timeline-card__period { position: absolute; top: 50%; left: -149px; z-index: 2; width: 90px; padding: 5px 9px; transform: translateY(-50%); border: 1px solid $color-ink; border-radius: 999px; background: white; font-size: 12px; text-align: center; }
+.timeline-card:nth-child(even) .timeline-card__period { right: -149px; left: auto; }
+.timeline-card__tag { color: $color-muted; font-size: 12px; line-height: 18px; letter-spacing: 1.2px; text-transform: uppercase; }
+.timeline-card h3 { margin-top: 5px; font-size: 24px; font-weight: 500; line-height: 28px; }
+.timeline-card__organization { margin-top: 6px; font-size: 15px; font-weight: 600; line-height: 22px; }
+.timeline-card__description { margin-top: 6px; color: $color-muted; font-size: 14px; line-height: 20px; }
+.companies-section { display: grid; height: 360px; padding: 34px 0; place-items: center; background: $color-soft; }
+.companies-section > .container { width: 1220px; max-width: calc(100% - 64px); }
+.logo-strip { display: flex; width: 100%; height: 290px; margin: 0; padding: 17px 0; flex-wrap: wrap; align-content: flex-start; align-items: flex-start; justify-content: center; gap: 0 50px; list-style: none; }
+.logo-strip li { position: relative; height: 128px; flex: 0 0 auto; overflow: hidden; }
+.logo-strip img { position: absolute; max-width: none; }
+.logo-strip li:nth-child(1) { width: 206px; }
+.logo-strip li:nth-child(1) img { top: 17.41%; left: .15%; width: 100%; height: 60.23%; }
+.logo-strip li:nth-child(2),
+.logo-strip li:nth-child(3),
+.logo-strip li:nth-child(8) { width: 245.8px; }
+.logo-strip li:nth-child(2) img { inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.logo-strip li:nth-child(3) img { top: -30.92%; left: 8.21%; width: 83.93%; height: 161.15%; }
+.logo-strip li:nth-child(4) { width: 157px; }
+.logo-strip li:nth-child(4) img { top: .39%; left: 9.55%; width: 81.97%; height: 100.54%; }
+.logo-strip li:nth-child(5),
+.logo-strip li:nth-child(7) { width: 197px; }
+.logo-strip li:nth-child(5) img { top: 14.81%; left: 6%; width: 88.83%; height: 71.54%; }
+.logo-strip li:nth-child(6) { width: 137px; }
+.logo-strip li:nth-child(6) img { top: 4.8%; left: 7.08%; width: 84.45%; height: 90.39%; }
+.logo-strip li:nth-child(7) img { top: -53.61%; left: -13.83%; width: 127.79%; height: 196.67%; }
+.logo-strip li:nth-child(8) img { top: 3.68%; left: 1.51%; width: 96.43%; height: 92.95%; }
+.logo-strip li:nth-child(9) { width: 142px; }
+.logo-strip li:nth-child(9) img { top: 14.02%; left: -72.47%; width: 169.25%; height: 68.63%; }
+.journey-section + .companies-section + .cta h2 { max-width: 960px; font-size: 56px; line-height: .94; }
+
+@media (max-width: 899px) {
+  .timeline { grid-template-columns: 24px 1fr; grid-auto-rows: auto; gap: 0 18px; width: 100%; }
+  .timeline::before { top: 0; bottom: 28px; left: 12px; }
+  .timeline-card, .timeline-card:nth-child(even) { grid-row: auto; grid-column: 2; width: 100%; min-height: 0; margin-bottom: 28px; }
+  .timeline-card__period, .timeline-card:nth-child(even) .timeline-card__period { position: static; width: fit-content; margin-bottom: 10px; transform: none; }
+  .companies-section { height: auto; padding: 56px 0; }
+  .companies-section > .container { width: calc(100% - 40px); max-width: none; }
+  .logo-strip { display: grid; grid-template-columns: repeat(2,1fr); height: auto; padding: 0; gap: 24px 18px; }
+  .logo-strip li:nth-child(n) { display: grid; width: 100%; height: 90px; place-items: center; overflow: visible; }
+  .logo-strip li:nth-child(n) img { position: static; width: 80%; height: 70%; object-fit: contain; }
+  .journey-section + .companies-section + .cta h2 { font-size: clamp(38px,11vw,56px); line-height: .94; }
+}
