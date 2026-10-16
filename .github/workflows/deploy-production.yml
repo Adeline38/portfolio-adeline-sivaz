@@ -13,8 +13,8 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  OVH_REMOTE_PATH: adelinesivaz
-  PRODUCTION_URL: https://adelinesivaz.com
+  OVH_REMOTE_PATH: ${{ vars.OVH_REMOTE_PATH }}
+  PRODUCTION_URL: ${{ vars.PRODUCTION_URL }}
 
 jobs:
   build:
