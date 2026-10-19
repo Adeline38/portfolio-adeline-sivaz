@@ -18,8 +18,8 @@
 .home-skills__body > img { width: 520px; height: 430px; object-fit: cover; }
 .home-skills__list { list-style: none; }
 .home-skills__list li { display: grid; grid-template-columns: 44px 1fr; gap: 18px; min-height: 107px; align-items: center; border-bottom: 1px solid $color-line; }
-.home-skills__list li > span { font-family: $font-serif; font-size: 24px; }
-.home-skills__list strong { font-family: $font-serif; font-size: 24px; font-weight: 500; line-height: 30px; }
+.home-skills__list li > span { font-family: $font-serif; font-size: 34px; }
+.home-skills__list strong { font-family: $font-serif; font-size: 34px; font-weight: 500; line-height: 30px; }
 .home-skills__list p { color: $color-muted; font-size: 13px; line-height: 19px; }
 
 .home-projects { padding: 66px 96px; background: rgba($color-soft,.96); }
