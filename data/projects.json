@@ -44,7 +44,7 @@
       "technologies": ["crea", "misenepage", "photoshop", "illustrator", "htmlcss", "sass", "javascript", "json", "logo", "iconographie"],
       "resume": "Récapitulatif de mon expérience professionnelle depuis 25 ans.",
       "description": "Vitrine numérique professionnelle développée sous forme de site multipage performant. Alimenté par des fichiers JSON pour les contenus dynamiques, le site propose une navigation claire, des galeries réactives et respecte les bonnes pratiques d’accessibilité web.",
-      "coverImage": {"url": "../assets/images/projects/portfolio/2026-10-16 10_09_54-Greenshot - Copie.png", "alt": "Capture de la page d'accueil principale du portfolio d'Adeline SIVAZ"},
+      "coverImage": {"url": "../assets/images/projects/portfolio/desktop-mobile.png", "alt": "Capture de la page d'accueil principale du portfolio d'Adeline SIVAZ"},
       "gallery": [
         {"url": "../assets/images/illustrations/hero-collage.png", "alt": "Vue détaillée de l'interface bureau"},
         {"url": "../assets/images/illustrations/workspace-devices.png", "alt": "Aperçu de la version mobile responsive"},
@@ -96,7 +96,7 @@
       "resume": "Plateforme d'enchères en PHP/MVC : modèle SQL, authentification et formulaires sécurisés.",
       "description": "Plateforme web adaptative d'enchères en ligne et de petites annonces entre particuliers. Développée en PHP natif sous une architecture MVC robuste, elle intègre une modélisation de données SQL pour l'historique des offres, la sécurisation des formulaires et une authentification complète.",
       "coverImage": {
-        "url": "../assets/images/projects/quiditmieux/image+2-1920w.webp",
+        "url": "../assets/images/projects/quiditmieux/desktop-mobile.png",
         "alt": "Capture de l’interface principale du projet d'enchères en ligne Qui Dit Mieux"
       },
       "gallery": [
@@ -132,7 +132,7 @@
       "resume": "Application web communautaire et collaborative dédiée au partage et à l'échange de services de proximité.",
       "description": "Application web communautaire et collaborative dédiée au partage et à l'échange de services de proximité. Conçue avec le framework Symfony et Doctrine ORM, elle propose une messagerie privée asynchrone et un fil d'actualité filtré.",
       "coverImage": {
-        "url": "../assets/images/projects/voisin/9d3f9c22191ac5274a059d9ebe014779157d538b.png",
+        "url": "../assets/images/projects/voisin/desktop-mobile.png",
         "alt": "Capture de l’interface principale de la plateforme d'entraide locale Voisins"
       },
       "gallery": [
